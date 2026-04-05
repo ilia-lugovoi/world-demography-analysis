@@ -23,7 +23,6 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
   - "Группы по ВВП на душу по ППС" - фильтр по ВВП на душу по ППС страны за 2023 год, использовал команду pandas qcut, для разбивки на 4 корзины (46x4 и 144 без данных)
   - "Выберите год (для диаграмм)" и "Выберите год (для карты)" - обязательные фильтры для пузырьковых диаграмм и карты, годы с 1990 по 2023 и с 1950 по 2023 соответственно.
 * **Чарты:**
-  Часть 1.
   - **Пузырьковые диаграммы**
     1. "Life Cost VS ВВП по ППС"
     `charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe.gif`
@@ -33,15 +32,13 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
   - **Карта заселенности**
     4. "Плотность населения по странам" - карта стран с отрисовкой цвета полигона в зависимости от плотности населения страны с 1950 по 2023 годы
     `charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif`
-  Чатсь 2.
   - **Линейные графики и нормализованные диаграммы (на каждом скрине по 2 чарта)**
     `charts_datalens/lineCharts1.png`
     `charts_datalens/lineCharts2.png`
     `charts_datalens/normDiagram1.png`
     `charts_datalens/MixLineDiagram.png`
-  Часть 3.
   - **Сводная годовая таблица по уровню детализации**
-  `charts_datalens/EuropeInTable2023.png`
+    `charts_datalens/EuropeInTable2023.png`
 
 **Средневзвешенное считаем по Популяции и учитываем возможные NULL, точечно исключая их проверкой в начале формулы**.
 Что позволило избежать 'статистического шума' от малых стран и получить корректную картину по регионам и миру в целом.
