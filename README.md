@@ -25,21 +25,24 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
 * **Чарты:**
   - **Пузырьковые диаграммы**
     1. "Life Cost VS ВВП по ППС"
-    `charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe.gif`
+    ![LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe](charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe.gif)
     2. "Грамотность VS ВВП по ППС"
-    `charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif`
+    ![Literecy_VS_GDPperCapitaPPP_Asia](charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif)
     3. "Военка VS ВВП по ППС"
   - **Карта заселенности**
     4. "Плотность населения по странам" - карта стран с отрисовкой цвета полигона в зависимости от плотности населения страны с 1950 по 2023 годы
-    `charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif`
+    ![militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita](charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif)
   - **Линейные графики и нормализованные диаграммы (на каждом скрине по 2 чарта)**
-    `charts_datalens/lineCharts1.png`
-    `charts_datalens/lineCharts2.png`
-    `charts_datalens/normDiagram1.png`
-    `charts_datalens/MixLineDiagram.png`
+    5. "Доля в мировой экономике" и "Фертильность"
+    <img width="1870" height="760" alt="lineCharts1" src="charts_datalens/lineCharts1.png" />
+    6. "Уровень демографической нагрузки" и "Фертильность"
+    <img width="1869" height="756" alt="lineCharts2" src="charts_datalens/lineCharts2.png" />
+    7. "Рождаемость с долей смертности при родах" и "Популяция с долей мужчин на женщину"
+    <img width="1865" height="751" alt="normDiagram1" src="charts_datalens/normDiagram1.png" />
+    8. "Индекс путешественника" и "Чистый прирост населения с долей миграции"
+    <img width="1868" height="752" alt="MixLineDiagram" src="charts_datalens/MixLineDiagram.png" />
   - **Сводная годовая таблица по уровню детализации**
-    `charts_datalens/EuropeInTable2023.png`
-    https://github.com/ilia-lugovoi/world-demography-analysis/blob/main/charts_datalens/EuropeInTable2023.png
+    <img width="1867" height="770" alt="EuropeInTable2023" src="charts_datalens/EuropeInTable2023.png" />
     
 **Средневзвешенное считаем по Популяции и учитываем возможные NULL, точечно исключая их проверкой в начале формулы**.
 Что позволило избежать 'статистического шума' от малых стран и получить корректную картину по регионам и миру в целом.
