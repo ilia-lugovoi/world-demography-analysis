@@ -39,7 +39,8 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
     `charts_datalens/MixLineDiagram.png`
   - **Сводная годовая таблица по уровню детализации**
     `charts_datalens/EuropeInTable2023.png`
-
+    https://github.com/ilia-lugovoi/world-demography-analysis/blob/main/charts_datalens/EuropeInTable2023.png
+    
 **Средневзвешенное считаем по Популяции и учитываем возможные NULL, точечно исключая их проверкой в начале формулы**.
 Что позволило избежать 'статистического шума' от малых стран и получить корректную картину по регионам и миру в целом.
 
