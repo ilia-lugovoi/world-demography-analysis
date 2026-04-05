@@ -25,7 +25,7 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
 * **Чарты:**
   - **Пузырьковые диаграммы**
     1. "Life Cost VS ВВП по ППС"
-    ![LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe](charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe.gif)
+    ![LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe](charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern_Europe.gif)
     2. "Грамотность VS ВВП по ППС"
     ![Literecy_VS_GDPperCapitaPPP_Asia](charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif)
     3. "Военка VS ВВП по ППС"
