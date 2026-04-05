@@ -30,15 +30,20 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
     ![Literecy_VS_GDPperCapitaPPP_Asia](charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif)
     3. "Военка VS ВВП по ППС"
   - **Карта заселенности**
-    4. "Плотность населения по странам" - карта стран с отрисовкой цвета полигона в зависимости от плотности населения страны с 1950 по 2023 годы
+
+     4. "Плотность населения по странам" - карта стран с отрисовкой цвета полигона в зависимости от плотности населения страны с 1950 по 2023 годы
     ![militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita](charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif)
   - **Линейные графики и нормализованные диаграммы (на каждом скрине по 2 чарта)**
+
     5. "Доля в мировой экономике" и "Фертильность"
     <img width="1870" height="760" alt="lineCharts1" src="charts_datalens/lineCharts1.png" />
+
     6. "Уровень демографической нагрузки" и "Фертильность"
     <img width="1869" height="756" alt="lineCharts2" src="charts_datalens/lineCharts2.png" />
+
     7. "Рождаемость с долей смертности при родах" и "Популяция с долей мужчин на женщину"
     <img width="1865" height="751" alt="normDiagram1" src="charts_datalens/normDiagram1.png" />
+
     8. "Индекс путешественника" и "Чистый прирост населения с долей миграции"
     <img width="1868" height="752" alt="MixLineDiagram" src="charts_datalens/MixLineDiagram.png" />
   - **Сводная годовая таблица по уровню детализации**
