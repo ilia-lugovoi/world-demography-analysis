@@ -1,9 +1,9 @@
 # Global Demographic and Economic Analysis (1950–2023)
 
-## Цели проекта
+## Цель проекта
 Создание дашборда, насыщенного ценными инсайдами по мировой демографии и экономики
 
-## Основные используемые технологии:
+## Основные используемые технологии
 Python (Pandas, NumPy, Geopandas), DataLens, SQL
 
 ## Структура Jupyter Notebook
@@ -14,51 +14,50 @@ Python (Pandas, NumPy, Geopandas), DataLens, SQL
 * Преобразовываем shp-файла с геополигонами в GeoJSON для дальнешего преобразования на nextgis в csv
 
 ## Структура Datalens
-**Два датасета:**
-Основной из prepared_data - обработанные нами данные в jupyter lab
-Cоединенные prepared_data с datalens_geopolygons для построения карты плотности населения
+### **Два датасета:**
+* Основной из prepared_data для создания всего дашборда
+* Cоединенные prepared_data с datalens_geopolygons для построения карты плотности населения
 
-**Фильтры:**
+### **Фильтры:**
   - "Гранулярность" - базовый и обязательный фильтр дашборда, который определяет уровень детализации на графиках и таблицах: Части света, Субрегионы, Страны, Группы по популяции, Группы по ВВП на душу по ППС
   - "Части света", "Субрегионы", "Страны" - географические фильтры
     Данные по этим группам взяты с Github Datahub - https://github.com/datasets
   - "Группы популяции" - фильтр по население страны, задал пороговые значения на 6 групп
   - "Группы по ВВП на душу по ППС" - фильтр по ВВП на душу по ППС страны за 2023 год, использовал команду pandas qcut, для разбивки на 4 корзины (46x4 и 144 без данных)
   - "Выберите год (для диаграмм)" и "Выберите год (для карты)" - обязательные фильтры для пузырьковых диаграмм и карты, годы с 1990 по 2023 и с 1950 по 2023 соответственно.
-  - 
-**Чарты:**
-  - **Пузырьковые диаграммы**
-    1. "Life Cost VS ВВП по ППС"
-    ![LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe](charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern_Europe.gif)
-    2. "Грамотность VS ВВП по ППС"
-    ![Literecy_VS_GDPperCapitaPPP_Asia](charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif)
-    3. "Военка VS ВВП по ППС"
-  - **Карта заселенности**
 
-     4. "Плотность населения по странам" - карта стран с отрисовкой цвета полигона в зависимости от плотности населения страны с 1950 по 2023 годы
-    ![militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita](charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif)
-  - **Линейные графики и нормализованные диаграммы (на каждом скрине по 2 чарта)**
+### **Чарты:**
 
-    5. "Доля в мировой экономике" и "Фертильность"
-    <img width="1870" height="760" alt="lineCharts1" src="charts_datalens/lineCharts1.png" />
+**"Life Cost VS ВВП по ППС"**
+![LifeCostRate_VS_GDPperCapitaPPP_Eastern Europe](charts_datalens/LifeCostRate_VS_GDPperCapitaPPP_Eastern_Europe.gif)
+    
+**"Грамотность VS ВВП по ППС"**
+![Literecy_VS_GDPperCapitaPPP_Asia](charts_datalens/Literecy_VS_GDPperCapitaPPP_Asia.gif)
+    
+**"Военка VS ВВП по ППС"** и **"Плотность населения по странам"** в полном масштабе
+![militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita](charts_datalens/militaryGDP_VS_GDPperCapitaPPP_UpMediumContries_Up50GDPperCapita.gif)
 
-    6. "Уровень демографической нагрузки" и "Фертильность"
-    <img width="1869" height="756" alt="lineCharts2" src="charts_datalens/lineCharts2.png" />
+**"Доля в мировой экономике"** и **"Фертильность"**
+<img width="1870" height="760" alt="lineCharts1" src="charts_datalens/lineCharts1.png" />
 
-    7. "Рождаемость с долей смертности при родах" и "Популяция с долей мужчин на женщину"
-    <img width="1865" height="751" alt="normDiagram1" src="charts_datalens/normDiagram1.png" />
+**"Уровень демографической нагрузки"** и **"Фертильность"**
+<img width="1869" height="756" alt="lineCharts2" src="charts_datalens/lineCharts2.png" />
 
-    8. "Индекс путешественника" и "Чистый прирост населения с долей миграции"
-    <img width="1868" height="752" alt="MixLineDiagram" src="charts_datalens/MixLineDiagram.png" />
-  - **Сводная годовая таблица по уровню детализации**
-    <img width="1867" height="770" alt="EuropeInTable2023" src="charts_datalens/EuropeInTable2023.png" />
+**"Рождаемость с долей смертности при родах"** и **"Популяция с долей мужчин на женщину"**
+<img width="1865" height="751" alt="normDiagram1" src="charts_datalens/normDiagram1.png" />
+
+**"Индекс экспата"** и **"Чистый прирост населения с долей миграции"**
+<img width="1868" height="752" alt="MixLineDiagram" src="charts_datalens/MixLineDiagram.png" />
+
+**Сводная годовая таблица по уровню детализации**
+<img width="1867" height="770" alt="EuropeInTable2023" src="charts_datalens/EuropeInTable2023.png" />
     
 **Средневзвешенное считаем по Популяции и учитываем возможные NULL, точечно исключая их проверкой в начале формулы**.
 Что позволило избежать 'статистического шума' от малых стран и получить корректную картину по регионам и миру в целом.
 
-**Методики расчета индексов:**
+### **Методики расчета индексов:**
 * Индекс демографической нагрузки = Доля от мировой популяции / Доля от мирового ВВП по ППС
 * Индекс экспата = Доля от мирового ВВП / Доля от мировой популяции
 
-**Ссылка на дашборд**:
+### **Ссылка на дашборд**:
 https://datalens.yandex/ssfqv0ouzxhsc
