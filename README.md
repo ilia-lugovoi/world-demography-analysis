@@ -1,4 +1,4 @@
-# Global Demographic and Economic Analysis (1950–2023)
+# Global Economic and Demographic Analysis (1950–2023)
 
 ## Цель проекта
 Создание дашборда, насыщенного ценными инсайдами по мировой демографии и экономики
